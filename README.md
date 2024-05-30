@@ -339,6 +339,12 @@ git clone https://huggingface.co/TMElyralab/MuseV ./checkpoints
 ## Inference
 
 ### Prepare model_path
+
+```
+from diffusers import DiffusionPipeline
+pipeline = DiffusionPipeline.from_pretrained("TMElyralab/MuseV")
+```
+
 Skip this step when run example task with example inference command.
 Set model path and abbreviation in config, to use abbreviation in inference script.
 - T2I SD：ref to `musev/configs/model/T2I_all_model.py`
